@@ -18,9 +18,7 @@
         </button>
       </div>
 
-      <div class="mx-auto p-5">
-        <v-select class="web-portal-custom-style" :options="options"></v-select>
-      </div>
+      <Test />
 
       <nuxt-link to="/me" class="underline text-base text-blue-700 mt-3">Go to me</nuxt-link>
     </div>
@@ -29,21 +27,13 @@
 
 <script>
 import { mapState, mapActions } from 'vuex';
-import vSelect from 'vue-select'
+
+import Test from '@/components/Test';
 
 export default {
-  components: {
-    vSelect
-  },
 
-  data() {
-    return {
-    options: [
-      'foo',
-      'bar',
-      'baz'
-    ]
-    }
+  components: {
+    Test
   },
 
   mounted() {
