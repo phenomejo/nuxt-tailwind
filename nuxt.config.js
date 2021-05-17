@@ -17,6 +17,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/assets/scss/tailwind.scss',
     '@/assets/scss/vue-select.scss',
   ],
 

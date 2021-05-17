@@ -3,20 +3,5 @@
 @tailwind utilities;
 
 @layer components {
-  .btn {
-    @apply px-4 py-2 tracking-wider font-semibold text-sm rounded-lg
-      sm:text-base focus:ring focus:ring-offset-1
-      focus:ring-opacity-50 focus:outline-none #{!important};
-  }
-  
-  .btn-primary {
-    @apply bg-indigo-500 text-white shadow-lg
-      hover:bg-indigo-400 hover:-translate-y-0.5
-      active:bg-indigo-600 focus:ring-indigo-500
-       transform transition #{!important};
-  }
-  
-  .btn-secondary {
-    @apply bg-gray-300 active:bg-gray-400 focus:ring-gray-300 text-gray-800 #{!important};
-  }
+  @import url('@/assets/scss/_button.scss');
 }
